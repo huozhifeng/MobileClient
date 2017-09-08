@@ -8,4 +8,34 @@
 <div><img src="gd.png" alt="aa"></div>
 
 </body>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+    wx.onMenuShareTimeline({
+        title: '答题赢5倍收益，华夏财富推出华夏回报专享活动', // 分享标题
+        link: 'https://huozhifeng.github.io/MobileClient/test.html', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: 'bj.png', // 分享图标
+        success: function () {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+
+    wx.onMenuShareAppMessage({
+        title: '答题赢5倍收益，华夏财富推出华夏回报专享活动', // 分享标题
+        desc: '9月12-22日,答题即可获得华夏回报收益翻5倍的机会,奖励上限为50元!', // 分享描述
+        link: 'https://huozhifeng.github.io/MobileClient/test.html', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: 'bj.png', // 分享图标
+        type: '', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function () {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function () {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+
+</script>
 </html>
